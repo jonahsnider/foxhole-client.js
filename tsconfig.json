@@ -1,12 +1,16 @@
 {
 	"compilerOptions": {
-		"module": "commonjs",
-		"moduleResolution": "node",
+		"lib": ["ESNext", "DOM"],
+		"removeComments": true,
+		"forceConsistentCasingInFileNames": true,
 		"outDir": "tsc_output",
+		"module": "ESNext",
+		"moduleResolution": "node",
 		"resolveJsonModule": true,
+		"declaration": true,
 		"sourceMap": true,
 		"strict": true,
-		"target": "es2018"
+		"target": "ESNext"
 	},
 	"exclude": ["node_modules", "nyc_output", "coverage"],
 	"include": ["src"]

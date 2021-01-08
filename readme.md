@@ -1,16 +1,13 @@
-# [TypeScript](https://www.typescriptlang.org) Starter
+# foxhole-ts
 
-[![Build Status](https://github.com/pizzafox/typescript-starter/workflows/CI/badge.svg)](https://github.com/pizzafox/typescript-starter/actions)
+[![Build Status](https://github.com/pizzafox/foxhole-ts/workflows/CI/badge.svg)](https://github.com/pizzafox/foxhole-ts/actions)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
-[![codecov](https://codecov.io/gh/pizzafox/typescript-starter/branch/main/graph/badge.svg)](https://codecov.io/gh/pizzafox/typescript-starter)
 
-My personal TypeScript starter template.
+Foxhole Game API library for the web and Node.js.
 
 ## Contributing
 
 ### Prequisites
-
-This project uses [Node.js](https://nodejs.org) to run, so make sure you've got a recent version installed.
 
 This project uses [Yarn](https://yarnpkg.com) 2 to manage dependencies and run scripts.
 After cloning the repository you can use this command to install dependencies:
@@ -54,4 +51,4 @@ yarn run test
 #### Coverage
 
 This will generate a `coverage` folder which has a breakdown of coverage of the project.
-The CI will upload the coverage information to [CodeCov](https://codecov.io) which can be [viewed here](https://codecov.io/gh/pizzafox/typescript-starter).
+The CI will upload the coverage information to [CodeCov](https://codecov.io) which can be [viewed here](https://codecov.io/gh/pizzafox/foxhole-ts).
