@@ -199,3 +199,6 @@ tsc_output
 !.yarn/sdks
 !.yarn/versions
 .pnp.*
+
+# Generated docs
+docs
