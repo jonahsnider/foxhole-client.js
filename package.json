@@ -28,7 +28,8 @@
 		"build": "tsc",
 		"lint": "xo",
 		"prebuild": "rm -rf tsc_output",
-		"style": "prettier --check ."
+		"style": "prettier --check .",
+		"docs": "typedoc src/index.ts"
 	},
 	"version": "1.0.0",
 	"xo": {
