@@ -1,5 +1,6 @@
+import * as ky from 'ky-universal';
 import {CoordinatePair} from '../../common';
-import {http} from '../../http';
+import {config} from '../../http';
 import {Api} from '../api';
 import {Team} from '../common';
 
@@ -73,7 +74,7 @@ export class MapData {
 }
 
 export async function fetchDynamicMapData(mapName: string): Promise<MapData> {
-	const response = await http(`worldconquest/maps/${encodeURIComponent(mapName)}/dynamic/public`);
+	const response = await ky(`worldconquest/maps/${encodeURIComponent(mapName)}/dynamic/public`, config);
 	const data = await response.json();
 	const dynamicMap = new MapData(data);
 
@@ -81,7 +82,7 @@ export async function fetchDynamicMapData(mapName: string): Promise<MapData> {
 }
 
 export async function fetchStaticMapData(mapName: string): Promise<MapData> {
-	const response = await http(`worldconquest/maps/${encodeURIComponent(mapName)}/static`, {cache: 'force-cache'});
+	const response = await ky(`worldconquest/maps/${encodeURIComponent(mapName)}/static`, {...config, cache: 'force-cache'});
 	const data = await response.json();
 	const staticMap = new MapData(data);
 
