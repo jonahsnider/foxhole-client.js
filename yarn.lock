@@ -2698,7 +2698,7 @@ __metadata:
     prettier-config-xo: 1.0.3
     source-map-support: 0.5.19
     ts-node: 9.1.1
-    typedoc: 0.20.13
+    typedoc: 0.20.17
     typescript: 4.1.3
     xo: 0.37.1
   languageName: unknown
@@ -6473,16 +6473,16 @@ resolve@^1.17.0:
   languageName: node
   linkType: hard
 
-"typedoc-default-themes@npm:0.12.0":
-  version: 0.12.0
-  resolution: "typedoc-default-themes@npm:0.12.0"
-  checksum: 112a092fe01a9fde6255cd0992c952cb28056efb6c1fb13426131be21cbbda283a9f27d294fdc10f51fa8ab5b0b47a1da74d908e24e7ad0d814939a6eb629a86
+"typedoc-default-themes@npm:^0.12.5":
+  version: 0.12.5
+  resolution: "typedoc-default-themes@npm:0.12.5"
+  checksum: 2b1c8d5403877400961f56b6626b0d305194574f381f46dca72a5f3db2e04900bf0b2efbbab834d884795da596671ca9f5f3f3e218421aa40c32ba20fd7a30c9
   languageName: node
   linkType: hard
 
-"typedoc@npm:0.20.13":
-  version: 0.20.13
-  resolution: "typedoc@npm:0.20.13"
+"typedoc@npm:0.20.17":
+  version: 0.20.17
+  resolution: "typedoc@npm:0.20.17"
   dependencies:
     colors: ^1.4.0
     fs-extra: ^9.0.1
@@ -6494,12 +6494,12 @@ resolve@^1.17.0:
     progress: ^2.0.3
     shelljs: ^0.8.4
     shiki: ^0.2.7
-    typedoc-default-themes: 0.12.0
+    typedoc-default-themes: ^0.12.5
   peerDependencies:
     typescript: 3.9.x || 4.0.x || 4.1.x
   bin:
     typedoc: bin/typedoc
-  checksum: c4241c2534a4daae77be44a09f0f2db295d6d6a5b7797a8e3fe57a7633904febd197183e31eba95a54d11ee4e52bffa80316a29253b3c47ec0de3e15fd591efc
+  checksum: b218e2019dac8022dd3bae536bdb74083b89b1905b5c076cc6dca682443f8a72e8a1a1b8a66f7f5458c49e3cd71d139b1f363bb9a9b8637de4a6c2c757180f29
   languageName: node
   linkType: hard
 
