@@ -2692,7 +2692,7 @@ __metadata:
   resolution: "foxhole@workspace:."
   dependencies:
     eslint-plugin-prettier: 3.3.1
-    ky: ^0.26.0
+    ky: ^0.27.0
     ky-universal: ^0.8.2
     prettier: 2.2.1
     prettier-config-xo: 1.0.3
@@ -3942,10 +3942,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ky@npm:^0.26.0":
-  version: 0.26.0
-  resolution: "ky@npm:0.26.0"
-  checksum: a1f5c6ead93f33d3e96be5f2c98e07b17b927546267bd36205e84795eb4f079b4dc3bf2beb2ccc072b0badc68c2678d0a54c5a99a4b551a38c99135dc9254705
+"ky@npm:^0.27.0":
+  version: 0.27.0
+  resolution: "ky@npm:0.27.0"
+  checksum: 2fa01aa187cf467949da995f6a57fb854591c0360290d958d8afd9d9cd2f54b527003170ba627f5d7d66d9934db8d0440067cf5a5b543d89a85a0103be9085d4
   languageName: node
   linkType: hard
 
