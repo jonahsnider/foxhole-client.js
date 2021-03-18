@@ -2888,7 +2888,7 @@ __metadata:
     source-map-support: 0.5.19
     ts-node: 9.1.1
     typedoc: 0.20.32
-    typescript: 4.1.3
+    typescript: 4.2.3
     xo: 0.38.2
   languageName: unknown
   linkType: soft
@@ -6702,17 +6702,7 @@ resolve@^1.17.0:
   languageName: node
   linkType: hard
 
-typescript@4.1.3:
-  version: 4.1.3
-  resolution: "typescript@npm:4.1.3"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: 4f7ab1506ea22c7a1c313ec5b4285e93ce08d709ad6086d02d3096adb399ca339972ee56d1e578213c51dd0fb7b0fad50283c2d3c39642405644458ae29774f8
-  languageName: node
-  linkType: hard
-
-typescript@^4.1.5:
+"typescript@4.2.3, typescript@^4.1.5":
   version: 4.2.3
   resolution: "typescript@npm:4.2.3"
   bin:
@@ -6722,17 +6712,7 @@ typescript@^4.1.5:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@4.1.3#builtin<compat/typescript>":
-  version: 4.1.3
-  resolution: "typescript@patch:typescript@npm%3A4.1.3#builtin<compat/typescript>::version=4.1.3&hash=a45b0e"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: 28f0f616bf6284543bb14d4bfe0e1a74963e5df0396ebccfc6a57bfd4ab70b4284e51b3a2045ed2466151a4a58c8a549edb886a2f7a2232cf08fcf73496592e6
-  languageName: node
-  linkType: hard
-
-"typescript@patch:typescript@^4.1.5#builtin<compat/typescript>":
+"typescript@patch:typescript@4.2.3#builtin<compat/typescript>, typescript@patch:typescript@^4.1.5#builtin<compat/typescript>":
   version: 4.2.3
   resolution: "typescript@patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"
   bin:
