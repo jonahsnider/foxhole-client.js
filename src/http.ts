@@ -1,3 +1,1 @@
-const apiUrl = 'https://war-service-live.foxholeservices.com/api';
-
-export const config = {prefixUrl: apiUrl};
+export const defaultApiUrl = 'https://war-service-live.foxholeservices.com/api';

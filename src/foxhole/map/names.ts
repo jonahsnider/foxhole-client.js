@@ -1,8 +1,8 @@
 import * as ky from 'ky-universal';
-import {config} from '../../http';
+import {defaultApiUrl} from '../../http';
 
-export async function mapNames(): Promise<string[]> {
-	const response = await ky('worldconquest/maps', config);
+export async function mapNames(apiUrl = defaultApiUrl): Promise<string[]> {
+	const response = await ky('worldconquest/maps', {prefixUrl: apiUrl});
 	const json = await response.json();
 
 	return json;
