@@ -1,6 +1,6 @@
 # foxhole-ts
 
-[![Build Status](https://github.com/jonahsnider/foxhole-ts/workflows/CI/badge.svg)](https://github.com/jonahsnider/foxhole-ts/actions)
+[![Build Status](https://github.com/jonahsniderder/foxhole-ts/workflows/CI/badge.svg)](https://github.cjonahsnidersnider/foxhole-ts/actions)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 
 Foxhole Game API library for the web and Node.js.
@@ -51,4 +51,4 @@ yarn run test
 #### Coverage
 
 This will generate a `coverage` folder which has a breakdown of coverage of the project.
-The CI will upload the coverage information to [CodeCov](https://codecov.io) which can be [viewed here](https://codecov.io/gh/pizzafox/foxhole-ts).
+The CI will upload the coverage information to [CodeCov](https://codecov.io) which can be [viewed here](https://codecov.io/gh/jonahsnider/foxhole-ts).
