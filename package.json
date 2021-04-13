@@ -5,7 +5,7 @@
 		"url": "https://jonah.pw"
 	},
 	"bugs": {
-		"url": "https://github.com/pizzafox/foxhole-ts/issues"
+		"url": "https://github.com/jonahsnider/foxhole-ts/issues"
 	},
 	"devDependencies": {
 		"eslint-plugin-prettier": "3.3.1",
@@ -22,7 +22,7 @@
 	"name": "foxhole",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/pizzafox/foxhole-ts.git"
+		"url": "git+https://github.com/jonahsnider/foxhole-ts.git"
 	},
 	"scripts": {
 		"build": "tsc",
