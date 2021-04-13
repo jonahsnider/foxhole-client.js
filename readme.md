@@ -1,6 +1,6 @@
 # foxhole-ts
 
-[![Build Status](https://github.com/pizzafox/foxhole-ts/workflows/CI/badge.svg)](https://github.com/pizzafox/foxhole-ts/actions)
+[![Build Status](https://github.com/jonahsnider/foxhole-ts/workflows/CI/badge.svg)](https://github.com/jonahsnider/foxhole-ts/actions)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 
 Foxhole Game API library for the web and Node.js.
