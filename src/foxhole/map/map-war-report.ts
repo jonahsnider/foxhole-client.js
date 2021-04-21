@@ -20,7 +20,7 @@ export class MapWarReport {
 
 export async function fetchMapWarReport(mapName: string, apiUrl = defaultApiUrl): Promise<MapWarReport> {
 	const response = await ky(`worldconquest/warReport/${encodeURIComponent(mapName)}`, {prefixUrl: apiUrl});
-	const data = await response.json();
+	const data: Api.MapWarReport = await response.json();
 	const mapWarReport = new MapWarReport(data);
 
 	return mapWarReport;
