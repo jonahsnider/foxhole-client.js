@@ -75,7 +75,7 @@ export class MapData {
 
 export async function fetchDynamicMapData(mapName: string, apiUrl = defaultApiUrl): Promise<MapData> {
 	const response = await ky(`worldconquest/maps/${encodeURIComponent(mapName)}/dynamic/public`, {prefixUrl: apiUrl});
-	const data = await response.json();
+	const data: Api.MapData = await response.json();
 	const dynamicMap = new MapData(data);
 
 	return dynamicMap;
@@ -83,7 +83,7 @@ export async function fetchDynamicMapData(mapName: string, apiUrl = defaultApiUr
 
 export async function fetchStaticMapData(mapName: string, apiUrl = defaultApiUrl): Promise<MapData> {
 	const response = await ky(`worldconquest/maps/${encodeURIComponent(mapName)}/static`, {prefixUrl: apiUrl, cache: 'force-cache'});
-	const data = await response.json();
+	const data: Api.MapData = await response.json();
 	const staticMap = new MapData(data);
 
 	return staticMap;
