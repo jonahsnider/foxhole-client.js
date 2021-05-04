@@ -39,7 +39,7 @@
 		}
 	},
 	"dependencies": {
-		"ky": "^0.27.0",
+		"ky": "^0.28.0",
 		"ky-universal": "^0.8.2"
 	},
 	"type": "module"
