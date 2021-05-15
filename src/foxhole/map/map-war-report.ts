@@ -1,6 +1,6 @@
 import * as ky from 'ky-universal';
 import {defaultApiUrl} from '../../http';
-import {Api} from '../api';
+import * as Api from '../api';
 import {Team} from '../common';
 
 export class MapWarReport {
@@ -20,7 +20,7 @@ export class MapWarReport {
 
 export async function fetchMapWarReport(mapName: string, apiUrl = defaultApiUrl): Promise<MapWarReport> {
 	const response = await ky(`worldconquest/warReport/${encodeURIComponent(mapName)}`, {prefixUrl: apiUrl});
-	const data: Api.MapWarReport = await response.json();
+	const data = (await response.json()) as Api.MapWarReport;
 	const mapWarReport = new MapWarReport(data);
 
 	return mapWarReport;

@@ -1,7 +1,7 @@
 import * as ky from 'ky-universal';
 import {CoordinatePair} from '../../common';
 import {defaultApiUrl} from '../../http';
-import {Api} from '../api';
+import * as Api from '../api';
 import {Team} from '../common';
 
 export interface MapIconFlags {
@@ -75,7 +75,7 @@ export class MapData {
 
 export async function fetchDynamicMapData(mapName: string, apiUrl = defaultApiUrl): Promise<MapData> {
 	const response = await ky(`worldconquest/maps/${encodeURIComponent(mapName)}/dynamic/public`, {prefixUrl: apiUrl});
-	const data: Api.MapData = await response.json();
+	const data = (await response.json()) as Api.MapData;
 	const dynamicMap = new MapData(data);
 
 	return dynamicMap;
@@ -83,7 +83,7 @@ export async function fetchDynamicMapData(mapName: string, apiUrl = defaultApiUr
 
 export async function fetchStaticMapData(mapName: string, apiUrl = defaultApiUrl): Promise<MapData> {
 	const response = await ky(`worldconquest/maps/${encodeURIComponent(mapName)}/static`, {prefixUrl: apiUrl, cache: 'force-cache'});
-	const data: Api.MapData = await response.json();
+	const data = (await response.json()) as Api.MapData;
 	const staticMap = new MapData(data);
 
 	return staticMap;
