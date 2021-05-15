@@ -1,4 +1,4 @@
-import {Api} from './api';
+import * as Api from './api';
 import {Team} from './common';
 
 export class War {

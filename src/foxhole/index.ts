@@ -1,4 +1,4 @@
 export * from './war';
 export * from './map/index';
 export * as worldExtents from './world-extents';
-export * from './api';
+export * as Api from './api';
