@@ -9,7 +9,7 @@
 	},
 	"devDependencies": {
 		"eslint-plugin-prettier": "3.4.0",
-		"prettier": "2.3.0",
+		"prettier": "2.3.1",
 		"prettier-config-xo": "1.0.4",
 		"source-map-support": "0.5.19",
 		"ts-node": "10.0.0",
