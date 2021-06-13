@@ -195,3 +195,6 @@ tsc_output
 # Yarn
 .yarn/*
 .pnp.*
+
+# Docs
+docs
