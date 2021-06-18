@@ -908,13 +908,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"at-least-node@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "at-least-node@npm:1.0.0"
-  checksum: 8f33efc16287ed39766065c718a2d36a469f702c66c6eb41fa460c0c62bca395301a6a02946e315ae4a84c9cc7f44c94ec73a556bc2a1049350da98d0b013afe
-  languageName: node
-  linkType: hard
-
 "atob@npm:^2.1.2":
   version: 2.1.2
   resolution: "atob@npm:2.1.2"
@@ -1423,13 +1416,6 @@ __metadata:
   version: 1.2.2
   resolution: "colorette@npm:1.2.2"
   checksum: e240f0c94b8d9f34b52bd17b50fc13a3b74f9e662edeaa2b0c65e06ec6b1fc6367fb42b834ec5a1d819d68b74a3d850f3bd3e284f9e614d6c4ffa122f83c6ec5
-  languageName: node
-  linkType: hard
-
-"colors@npm:^1.4.0":
-  version: 1.4.0
-  resolution: "colors@npm:1.4.0"
-  checksum: a0f266ac041a9774d92cc9624a984707678d2eeec125d54e8d8231075ce36c24c5352fb5d0f90c6ee420d0f63e354417cec716386ad341309334aad18e32b933
   languageName: node
   linkType: hard
 
@@ -2713,7 +2699,7 @@ __metadata:
     prettier-config-xo: 1.0.4
     source-map-support: 0.5.19
     ts-node: 10.0.0
-    typedoc: 0.20.37
+    typedoc: 0.21.0
     typescript: 4.2.4
     xo: 0.40.2
   languageName: unknown
@@ -2736,18 +2722,6 @@ __metadata:
     jsonfile: ^6.0.1
     universalify: ^2.0.0
   checksum: 84632d143fe3125b8c3c2b1fedbbdfcfb84fc3e087522b4e138cc07edf574619925713a6609f6d5e53ede2e31ab319c7d528ea4a4a770ba6622a16bf4447cd8b
-  languageName: node
-  linkType: hard
-
-"fs-extra@npm:^9.1.0":
-  version: 9.1.0
-  resolution: "fs-extra@npm:9.1.0"
-  dependencies:
-    at-least-node: ^1.0.0
-    graceful-fs: ^4.2.0
-    jsonfile: ^6.0.1
-    universalify: ^2.0.0
-  checksum: e667d8df54113b527bf5830dd9db8f142618db488894b329fe07724c7020dfacf8a372b144a74e683ae44e66f56117adca9cac165950dda7d83537c46c10dc4b
   languageName: node
   linkType: hard
 
@@ -2887,7 +2861,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^7.0.0, glob@npm:^7.1.3, glob@npm:^7.1.4":
+"glob@npm:^7.1.3, glob@npm:^7.1.4":
   version: 7.1.6
   resolution: "glob@npm:7.1.6"
   dependencies:
@@ -2898,6 +2872,20 @@ __metadata:
     once: ^1.3.0
     path-is-absolute: ^1.0.0
   checksum: 789977b52432865bd63846da5c75a6efc2c56abdc0cb5ffcdb8e91eeb67a58fa5594c1195d18b2b4aff99675b0739ed6bd61024b26562e0cca18c8f993efdc82
+  languageName: node
+  linkType: hard
+
+"glob@npm:^7.1.7":
+  version: 7.1.7
+  resolution: "glob@npm:7.1.7"
+  dependencies:
+    fs.realpath: ^1.0.0
+    inflight: ^1.0.4
+    inherits: 2
+    minimatch: ^3.0.4
+    once: ^1.3.0
+    path-is-absolute: ^1.0.0
+  checksum: 352f74f08247db5420161a2f68f2bd84b53228b5fcfc9dcc37cd54d3f19ec0232495d84aeff1286d0727059e9fdc1031400e00b971bdc59e30f8f82b199c9d02
   languageName: node
   linkType: hard
 
@@ -3332,7 +3320,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"interpret@npm:^1.0.0, interpret@npm:^1.2.0":
+"interpret@npm:^1.2.0":
   version: 1.4.0
   resolution: "interpret@npm:1.4.0"
   checksum: f15725d76206525546f559030ddc967db025c6db904eb8798a70ec3c07e42c5537c5cbc73a15eafd4ae5cdabad35601abf8878261c03dcc8217747e8037575fe
@@ -3438,7 +3426,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-core-module@npm:^2.1.0, is-core-module@npm:^2.2.0":
+"is-core-module@npm:^2.2.0":
   version: 2.2.0
   resolution: "is-core-module@npm:2.2.0"
   dependencies:
@@ -4212,12 +4200,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:~2.0.3":
-  version: 2.0.7
-  resolution: "marked@npm:2.0.7"
+"marked@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "marked@npm:2.1.1"
   bin:
     marked: bin/marked
-  checksum: f2df7d761530ec0794f6a4cdac052f2bdb4a4cdbad3578d019cf665a35cf29688f1c0d3885a8abd80de76451b780418048bfcb43999e4a7c5a9fa5f1264f2168
+  checksum: 8c5d4c34bd8d0d5c37067a0be8113b4df4b4e4452593923a3e49a5d7e0a235bef5b3ca9a97e6f894317a42e2b75184b36e2aeec71f458e88b45a92ff4eec0323
   languageName: node
   linkType: hard
 
@@ -5443,15 +5431,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rechoir@npm:^0.6.2":
-  version: 0.6.2
-  resolution: "rechoir@npm:0.6.2"
-  dependencies:
-    resolve: ^1.1.6
-  checksum: 6646a6bce733282d182bf04816b15d4e2d63736b3453cf62a8568aaa1399621a73b3942315161f549e090f9a3c61bc09f4cb674f928c369a40037621e10295bd
-  languageName: node
-  linkType: hard
-
 "redent@npm:^3.0.0":
   version: 3.0.0
   resolution: "redent@npm:3.0.0"
@@ -5564,16 +5543,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-resolve@^1.1.6:
-  version: 1.19.0
-  resolution: "resolve@npm:1.19.0"
-  dependencies:
-    is-core-module: ^2.1.0
-    path-parse: ^1.0.6
-  checksum: 8b23c7fde1224898ffb9fec2a2295a44d1564981343bdbf5fd3769465658f6a6f6647bb7ea66dfb3c1291ca86046b0233be2edfcd8ca05b38886521e8869677c
-  languageName: node
-  linkType: hard
-
 "resolve@^1.10.0, resolve@^1.10.1, resolve@^1.13.1, resolve@^1.17.0, resolve@^1.20.0":
   version: 1.20.0
   resolution: "resolve@npm:1.20.0"
@@ -5581,16 +5550,6 @@ resolve@^1.1.6:
     is-core-module: ^2.2.0
     path-parse: ^1.0.6
   checksum: 0f5206d454b30e74d9b2d575b5f8aedf443c4d8b90b84cdf79474ade29bb459075220da3127b682896872a16022ed65cc4db09e0f23849654144d3d75c65cd1b
-  languageName: node
-  linkType: hard
-
-"resolve@patch:resolve@^1.1.6#builtin<compat/resolve>":
-  version: 1.19.0
-  resolution: "resolve@patch:resolve@npm%3A1.19.0#builtin<compat/resolve>::version=1.19.0&hash=3388aa"
-  dependencies:
-    is-core-module: ^2.1.0
-    path-parse: ^1.0.6
-  checksum: 188d5167e8578a9af8d194faf382b8f3526aad5145391c24ecdc6246c6fc82c10fc66d6352267f8e93c5977c503d61803169c91b9e2ee36dd2de759915c9b673
   languageName: node
   linkType: hard
 
@@ -5792,19 +5751,6 @@ resolve@^1.1.6:
   version: 3.0.0
   resolution: "shebang-regex@npm:3.0.0"
   checksum: ea18044ffaf18129ced5a246660a9171a7dff98999aaa9de8abb237d8a7711d8a1f76e16881399994ee429156717ce1c6a50c665bb18a4d55a7f80b9125b1f7d
-  languageName: node
-  linkType: hard
-
-"shelljs@npm:^0.8.4":
-  version: 0.8.4
-  resolution: "shelljs@npm:0.8.4"
-  dependencies:
-    glob: ^7.0.0
-    interpret: ^1.0.0
-    rechoir: ^0.6.2
-  bin:
-    shjs: bin/shjs
-  checksum: bdf68e3c2a8a6d191dde3be2800bfcfd688c126344ccaf6cf7024cdaf824d0d3523b8e514cd52264f739cbabd2b0569637dd5a8183377347225af918e03ff5dc
   languageName: node
   linkType: hard
 
@@ -6512,26 +6458,24 @@ resolve@^1.1.6:
   languageName: node
   linkType: hard
 
-"typedoc@npm:0.20.37":
-  version: 0.20.37
-  resolution: "typedoc@npm:0.20.37"
+"typedoc@npm:0.21.0":
+  version: 0.21.0
+  resolution: "typedoc@npm:0.21.0"
   dependencies:
-    colors: ^1.4.0
-    fs-extra: ^9.1.0
+    glob: ^7.1.7
     handlebars: ^4.7.7
     lodash: ^4.17.21
     lunr: ^2.3.9
-    marked: ~2.0.3
+    marked: ^2.1.1
     minimatch: ^3.0.0
     progress: ^2.0.3
-    shelljs: ^0.8.4
     shiki: ^0.9.3
     typedoc-default-themes: ^0.12.10
   peerDependencies:
-    typescript: 3.9.x || 4.0.x || 4.1.x || 4.2.x
+    typescript: 4.0.x || 4.1.x || 4.2.x || 4.3.x
   bin:
     typedoc: bin/typedoc
-  checksum: 09efc1951f9ec5d3f37c40a6af63b98d1b4d0bd9c30f391d96489b368a182749f3701c2958ded80787c52c012043158ae5d966012538debc7c1d0ac844fd5b52
+  checksum: 4d61ab692f79b7255cb5b55e8e7e96bf558228c838fa7eb7da48f776166941f2de150aa32f3ff94464a2ca3ce81ba209d268c1dfa1e448f7ee2f9327e14cd3ef
   languageName: node
   linkType: hard
 
