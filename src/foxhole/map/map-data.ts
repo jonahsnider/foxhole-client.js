@@ -63,8 +63,8 @@ export class MapData {
 					homeBase: (mapItem.flags & Api.MapFlags.IsHomeBase) === mapItem.flags,
 					buildSite: (mapItem.flags & Api.MapFlags.IsBuildSite) === mapItem.flags,
 					scorched: (mapItem.flags & Api.MapFlags.IsScorched) === mapItem.flags,
-					townClaimed: (mapItem.flags & Api.MapFlags.IsTownClaimed) === mapItem.flags
-				}
+					townClaimed: (mapItem.flags & Api.MapFlags.IsTownClaimed) === mapItem.flags,
+				},
 			};
 		});
 		this.mapTextItems = data.mapTextItems.map(({x, y, ...rest}) => ({coordinates: [x, y], ...rest}));

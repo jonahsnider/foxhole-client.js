@@ -1,4 +1,4 @@
 export enum Team {
 	Colonials = 'colonials',
-	Wardens = 'wardens'
+	Wardens = 'wardens',
 }
