@@ -12,7 +12,7 @@ export class MapWarReport {
 		this.totalEnlistments = data.totalEnlistments;
 		this.casualties = {
 			[Team.Colonials]: data.colonialCasualties,
-			[Team.Wardens]: data.wardenCasualties
+			[Team.Wardens]: data.wardenCasualties,
 		};
 		this.dayOfWar = data.dayOfWar;
 	}

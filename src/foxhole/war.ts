@@ -35,7 +35,7 @@ export class War {
 
 		this.conquestTimes = {
 			start: data.conquestStartTime ? new Date(data.conquestStartTime) : null,
-			end: data.conquestEndTime ? new Date(data.conquestEndTime) : null
+			end: data.conquestEndTime ? new Date(data.conquestEndTime) : null,
 		};
 		this.resistanceTimes = {start: data.resistanceStartTime ? new Date(data.resistanceStartTime) : null};
 		this.requiredVictoryTowns = data.requiredVictoryTowns;

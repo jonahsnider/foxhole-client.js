@@ -3,7 +3,7 @@ import {Uuid} from '../common';
 export enum Team {
 	None = 'NONE',
 	Colonials = 'COLONIALS',
-	Wardens = 'WARDENS'
+	Wardens = 'WARDENS',
 }
 
 export interface War {
@@ -97,7 +97,7 @@ export enum MapIcon {
 	MassProductionFactory = 51,
 	Seaport = 52,
 	CoastalGun = 53,
-	SoulFactory = 54
+	SoulFactory = 54,
 }
 
 export enum MapFlags {
@@ -106,12 +106,12 @@ export enum MapFlags {
 	IsHomeBase = 0x02,
 	IsBuildSite = 0x04,
 	IsScorched = 0x10,
-	IsTownClaimed = 0x20
+	IsTownClaimed = 0x20,
 }
 
 export enum MapMarkerType {
 	Major = 'Major',
-	Minor = 'Minor'
+	Minor = 'Minor',
 }
 
 export interface MapData {
