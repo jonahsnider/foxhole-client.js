@@ -31,7 +31,7 @@
 	},
 	"dependencies": {
 		"ky": "^0.28.0",
-		"ky-universal": "^0.8.2"
+		"ky-universal": "^0.9.0"
 	},
 	"devDependencies": {
 		"eslint-plugin-prettier": "3.4.1",
