@@ -42,5 +42,6 @@
 		"ky": "^0.28.0",
 		"ky-universal": "^0.8.2"
 	},
-	"type": "module"
+	"type": "module",
+	"packageManager": "yarn@3.0.1"
 }
