@@ -1,11 +1,37 @@
 {
-	"author": {
-		"email": "jonah@jonah.pw",
-		"name": "Jonah Snider",
-		"url": "https://jonah.pw"
-	},
+	"name": "foxhole",
+	"version": "1.0.0",
 	"bugs": {
 		"url": "https://github.com/jonahsnider/foxhole-ts/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jonahsnider/foxhole-ts.git"
+	},
+	"license": "Apache-2.0",
+	"author": {
+		"name": "Jonah Snider",
+		"email": "jonah@jonah.pw",
+		"url": "https://jonah.pw"
+	},
+	"type": "module",
+	"main": "./tsc_output/index.js",
+	"scripts": {
+		"prebuild": "rm -rf tsc_output",
+		"build": "tsc",
+		"lint": "xo",
+		"style": "prettier --check .",
+		"docs": "typedoc src/index.ts"
+	},
+	"xo": {
+		"prettier": true,
+		"rules": {
+			"prettier/prettier": "off"
+		}
+	},
+	"dependencies": {
+		"ky": "^0.28.0",
+		"ky-universal": "^0.8.2"
 	},
 	"devDependencies": {
 		"eslint-plugin-prettier": "3.4.1",
@@ -17,31 +43,5 @@
 		"typescript": "4.3.5",
 		"xo": "0.44.0"
 	},
-	"license": "Apache-2.0",
-	"main": "./tsc_output/index.js",
-	"name": "foxhole",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/jonahsnider/foxhole-ts.git"
-	},
-	"scripts": {
-		"build": "tsc",
-		"lint": "xo",
-		"prebuild": "rm -rf tsc_output",
-		"style": "prettier --check .",
-		"docs": "typedoc src/index.ts"
-	},
-	"version": "1.0.0",
-	"xo": {
-		"prettier": true,
-		"rules": {
-			"prettier/prettier": "off"
-		}
-	},
-	"dependencies": {
-		"ky": "^0.28.0",
-		"ky-universal": "^0.8.2"
-	},
-	"type": "module",
 	"packageManager": "yarn@3.0.1"
 }
