@@ -27,14 +27,14 @@
 	],
 	"scripts": {
 		"build": "tsc",
+		"docs": "typedoc",
 		"lint": "xo",
+		"release": "semantic-release",
 		"style": "prettier --check .",
 		"test": "ava",
-		"release": "semantic-release",
 		"test:coverage": "c8 --reporter lcov --reporter text-summary --100 --include 'src/**/*.ts' --exclude 'src/types/**/*.ts' --all ava",
 		"validate-api": "api-extractor run",
-		"validate-api:local": "api-extractor run --local --verbose",
-		"docs": "typedoc"
+		"validate-api:local": "api-extractor run --local --verbose"
 	},
 	"prettier": "@jonahsnider/prettier-config",
 	"dependencies": {
