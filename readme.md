@@ -1,8 +1,9 @@
 # foxhole-client.js
 
+[![npm](https://img.shields.io/npm/v/foxhole-client)](https://npmjs.com/package/foxhole-client)
 [![Build Status](https://github.com/jonahsnider/foxhole-client.js/workflows/CI/badge.svg)](https://github.com/jonahsnider/foxhole-client.js/actions)
-[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 [![codecov](https://codecov.io/gh/jonahsnider/foxhole-client.js/branch/main/graph/badge.svg?token=FQ5BP2A1XO)](https://codecov.io/gh/jonahsnider/foxhole-client.js)
+[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 
 A [Foxhole War API](https://github.com/clapfoot/warapi#readme) client for the web and Node.js.
 
