@@ -21,11 +21,11 @@ console.log(warState);
 ## Installation
 
 ```sh
-npm i foxhole
+npm i foxhole-client
 # or
-yarn add foxhole
+yarn add foxhole-client
 # or
-pnpm i foxhole
+pnpm i foxhole-client
 ```
 
 ## Usage
