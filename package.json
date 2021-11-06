@@ -1,6 +1,13 @@
 {
 	"name": "foxhole-client",
 	"version": "0.0.0-development",
+	"description": "A Foxhole War API client for the web and Node.js.",
+	"keywords": [
+		"foxhole",
+		"foxhole-api",
+		"api-client",
+		"foxhole-game"
+	],
 	"homepage": "https://foxhole-clientjs.netlify.app",
 	"bugs": {
 		"url": "https://github.com/jonahsnider/foxhole-client.js/issues"
