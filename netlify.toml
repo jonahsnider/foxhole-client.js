@@ -1,0 +1,9 @@
+[build]
+base = "./"
+
+publish = "docs_out/"
+
+command = "yarn docs"
+
+[build.environment]
+NODE_VERSION = "16.9.0"
