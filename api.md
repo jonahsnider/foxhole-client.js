@@ -28,10 +28,8 @@ export class _BaseClient {
 class Client extends _BaseClient {
     constructor(shard: Shard | number);
     constructor(url?: string);
-    // (undocumented)
     readonly map: MapClient;
     readonly url: string;
-    // (undocumented)
     readonly war: WarClient;
 }
 export { Client }

@@ -8,8 +8,10 @@ import {BaseClient, MapClient, WarClient} from './index.js';
  */
 export enum Shard {
 	/**
-	 * The Foxhole dev branch.
+	 * The shard for the Foxhole dev branch.
+	 *
 	 * In general, any data from this endpoint should not be considered final, and is subject to change frequently.
+	 *
 	 * @see https://github.com/clapfoot/warapi#dev-branch
 	 */
 	Dev = 'dev',
@@ -19,6 +21,13 @@ export enum Shard {
 
 /**
  * The main Foxhole War API client.
+ *
+ * @example
+ * ```js
+ * import Foxhole from 'foxhole';
+ *
+ * const foxhole = new Foxhole();
+ * ```
  *
  * @public
  */
@@ -34,7 +43,9 @@ export class Client extends BaseClient {
 		}
 	}
 
+	/** Client for accessing war data on this shard. */
 	public readonly war = new WarClient(this.foxholeApi);
+	/** Client for accessing map data on this shard. */
 	public readonly map = new MapClient(this.foxholeApi);
 	/** The base URL to use in API requests. */
 	public readonly url: string;
@@ -42,11 +53,43 @@ export class Client extends BaseClient {
 	/**
 	 * Create a {@link Client} instance for a given shard.
 	 *
+	 * @example
+	 * ```js
+	 * import Foxhole from 'foxhole';
+	 *
+	 * // Any shard
+	 * const foxhole = new Foxhole(123);
+	 * ```
+	 *
+	 * @example
+	 * ```js
+	 * import Foxhole, { Shard } from 'foxhole';
+	 *
+	 * // Dev branch
+	 * const foxhole = new Foxhole(Shard.Dev);
+	 * ```
+	 *
 	 * @param shard - The official Foxhole shard to use
 	 */
 	constructor(shard: Shard | number);
 	/**
 	 * Create a {@link Client} instance for a given URL.
+	 *
+	 * @example
+	 * ```js
+	 * import Foxhole from 'foxhole';
+	 *
+	 * // Shard 1
+	 * const foxhole = new Foxhole();
+	 * ```
+	 *
+	 * @example
+	 * ```js
+	 * import Foxhole from 'foxhole';
+	 *
+	 * // Custom URL
+	 * const foxhole = new Foxhole('https://example.com/api');
+	 * ```
 	 *
 	 * @param url - The URL of the War API to use
 	 */

@@ -5,6 +5,11 @@ import {BaseClient} from './index.js';
 /**
  * A client for map data.
  *
+ * @example
+ * ```js
+ * foxhole.map
+ * ```
+ *
  * @public
  */
 export class MapClient extends BaseClient {
@@ -15,6 +20,11 @@ export class MapClient extends BaseClient {
 	 * This includes static bases and static base build sites.
 	 * Team-specific data for and forward bases are excluded.
 	 * This data may update every 3 seconds.
+	 *
+	 * @example
+	 * ```js
+	 * const dynamicPublicMapData = await foxhole.map.fetchDynamicPublicData('StonecradleHex');
+	 * ```
 	 *
 	 * @param mapName - The map name to get data for
 	 *
@@ -33,7 +43,13 @@ export class MapClient extends BaseClient {
 	 * This includes map text labels, resource nodes, and world structures.
 	 * You only need to request this once per map between World Conquests.
 	 *
+	 * @example
+	 * ```js
+	 * const staticMapData = await foxhole.map.fetchStaticData('StonecradleHex');
+	 * ```
+	 *
 	 * @param mapName - The map name to get data for
+	 *
 	 * @returns The static map data
 	 */
 	async fetchStaticData(mapName: string): Promise<Map.Data> {
@@ -45,6 +61,11 @@ export class MapClient extends BaseClient {
 	/**
 	 * Fetch a list of all map names.
 	 *
+	 * @example
+	 * ```js
+	 * const mapNames = await foxhole.map.fetchMapNames();
+	 * ```
+	 *
 	 * @returns A list of all map names
 	 */
 	async fetchMapNames(): Promise<string[]> {
@@ -53,6 +74,11 @@ export class MapClient extends BaseClient {
 
 	/**
 	 * Fetch the number of enlistments, casualties, and other map specific information for a given map.
+	 *
+	 * @example
+	 * ```js
+	 * const warReport = await foxhole.map.fetchWarReport('StonecradleHex');
+	 * ```
 	 *
 	 * @param mapName - The map name to get data for
 	 *

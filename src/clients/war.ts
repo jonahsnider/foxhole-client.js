@@ -5,11 +5,21 @@ import {BaseClient} from './index.js';
 /**
  * A client for war data.
  *
+ * @example
+ * ```js
+ * foxhole.war
+ * ```
+ *
  * @public
  */
 export class WarClient extends BaseClient {
 	/**
 	 * Fetch data about the current state of the war.
+	 *
+	 * @example
+	 * ```js
+	 * const warState = await foxhole.war.fetchState();
+	 * ```
 	 *
 	 * @returns Data about the current state of the war
 	 */
