@@ -1,6 +1,6 @@
 {
 	"entryPoints": ["./src/index.ts"],
-	"name": "foxhole.js",
+	"name": "foxhole-client.js",
 	"out": "docs_out",
 	"excludePrivate": true,
 	"excludeProtected": true,

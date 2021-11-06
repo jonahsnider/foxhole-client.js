@@ -24,7 +24,7 @@ export enum Shard {
  *
  * @example
  * ```js
- * import Foxhole from 'foxhole';
+ * import Foxhole from 'foxhole-client';
  *
  * const foxhole = new Foxhole();
  * ```
@@ -55,7 +55,7 @@ export class Client extends BaseClient {
 	 *
 	 * @example
 	 * ```js
-	 * import Foxhole from 'foxhole';
+	 * import Foxhole from 'foxhole-client';
 	 *
 	 * // Any shard
 	 * const foxhole = new Foxhole(123);
@@ -63,7 +63,7 @@ export class Client extends BaseClient {
 	 *
 	 * @example
 	 * ```js
-	 * import Foxhole, { Shard } from 'foxhole';
+	 * import Foxhole, { Shard } from 'foxhole-client';
 	 *
 	 * // Dev branch
 	 * const foxhole = new Foxhole(Shard.Dev);
@@ -77,7 +77,7 @@ export class Client extends BaseClient {
 	 *
 	 * @example
 	 * ```js
-	 * import Foxhole from 'foxhole';
+	 * import Foxhole from 'foxhole-client';
 	 *
 	 * // Shard 1
 	 * const foxhole = new Foxhole();
@@ -85,7 +85,7 @@ export class Client extends BaseClient {
 	 *
 	 * @example
 	 * ```js
-	 * import Foxhole from 'foxhole';
+	 * import Foxhole from 'foxhole-client';
 	 *
 	 * // Custom URL
 	 * const foxhole = new Foxhole('https://example.com/api');
@@ -100,7 +100,7 @@ export class Client extends BaseClient {
 		const http = ky.create({
 			prefixUrl: url,
 			headers: {
-				'User-Agent': 'foxhole.js (+https://github.com/jonahsnider/foxhole.js)',
+				'User-Agent': 'foxhole-client.js (+https://github.com/jonahsnider/foxhole-client.js)',
 			},
 		});
 
