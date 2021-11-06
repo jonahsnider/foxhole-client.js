@@ -1,0 +1,8 @@
+{
+	"entryPoints": ["./src/index.ts"],
+	"name": "foxhole",
+	"out": "docs_out",
+	"excludePrivate": true,
+	"excludeProtected": true,
+	"excludeInternal": true
+}

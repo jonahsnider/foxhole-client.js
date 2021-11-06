@@ -1,47 +1,64 @@
 {
 	"name": "foxhole",
-	"version": "1.0.0",
+	"version": "0.0.0-development",
+	"homepage": "https://foxholejs.netlify.app",
 	"bugs": {
-		"url": "https://github.com/jonahsnider/foxhole-ts/issues"
+		"url": "https://github.com/jonahsnider/foxhole.js/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/jonahsnider/foxhole-ts.git"
+		"url": "git+https://github.com/jonahsnider/foxhole.js.git"
 	},
 	"license": "Apache-2.0",
 	"author": {
 		"name": "Jonah Snider",
-		"email": "jonah@jonah.pw",
-		"url": "https://jonah.pw"
+		"email": "jonah@jonahsnider.com",
+		"url": "https://jonahsnider.com"
 	},
+	"sideEffects": false,
 	"type": "module",
-	"main": "./tsc_output/index.js",
+	"exports": "./tsc_output/index.js",
+	"types": "./tsc_output/index.d.ts",
+	"files": [
+		"tsc_output",
+		"!tsc_output/test",
+		"!tsc_output/*.tsbuildinfo"
+	],
 	"scripts": {
-		"prebuild": "rm -rf tsc_output",
 		"build": "tsc",
 		"lint": "xo",
 		"style": "prettier --check .",
-		"docs": "typedoc src/index.ts"
+		"test": "ava",
+		"release": "semantic-release",
+		"test:coverage": "c8 --reporter lcov --reporter text-summary --100 --include 'src/**/*.ts' --exclude 'src/types/**/*.ts' --all ava",
+		"validate-api": "api-extractor run",
+		"validate-api:local": "api-extractor run --local --verbose",
+		"docs": "typedoc"
 	},
-	"xo": {
-		"prettier": true,
-		"rules": {
-			"prettier/prettier": "off"
-		}
-	},
+	"prettier": "@jonahsnider/prettier-config",
 	"dependencies": {
-		"ky": "^0.28.0",
-		"ky-universal": "^0.8.2"
+		"ky": "0.28.6",
+		"ky-universal": "0.9.1"
 	},
 	"devDependencies": {
-		"eslint-plugin-prettier": "4.0.0",
-		"prettier": "2.3.2",
-		"prettier-config-xo": "2.0.0",
-		"source-map-support": "0.5.20",
+		"@jonahsnider/prettier-config": "1.1.0",
+		"@jonahsnider/xo-config": "5.0.0",
+		"@microsoft/api-extractor": "7.18.17",
+		"@tsconfig/node16": "1.0.2",
+		"@types/node": "16.9.6",
+		"ava": "4.0.0-rc.1",
+		"c8": "7.10.0",
+		"nock": "13.1.4",
+		"nyc": "15.1.0",
+		"prettier": "2.4.1",
+		"semantic-release": "18.0.0",
 		"ts-node": "10.4.0",
 		"typedoc": "0.22.7",
-		"typescript": "4.3.5",
-		"xo": "0.44.0"
+		"typescript": "4.4.4",
+		"xo": "0.46.4"
+	},
+	"engines": {
+		"node": ">=16.9.0"
 	},
 	"packageManager": "yarn@3.1.0"
 }
