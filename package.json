@@ -18,6 +18,7 @@
 	"sideEffects": false,
 	"type": "module",
 	"exports": "./tsc_output/index.js",
+	"main": "./tsc_output/index.js",
 	"types": "./tsc_output/index.d.ts",
 	"files": [
 		"tsc_output",
