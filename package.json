@@ -8,7 +8,7 @@
 		"api-client",
 		"foxhole-game"
 	],
-	"homepage": "https://foxhole-clientjs.netlify.app",
+	"homepage": "https://foxhole-client.js.org",
 	"bugs": {
 		"url": "https://github.com/jonahsnider/foxhole-client.js/issues"
 	},

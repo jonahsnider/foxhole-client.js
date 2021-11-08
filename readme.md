@@ -37,13 +37,13 @@ import Foxhole from 'foxhole-client';
 const foxhole = new Foxhole();
 ```
 
-Please refer to [the generated documentation](https://foxhole-clientjs.netlify.app/classes/client) for more detailed info.
+Please refer to [the generated documentation](https://foxhole-client.js.org/classes/client) for more detailed info.
 
 You may also want to view the [API report](./api.md).
 
 ### API Types
 
-If you're using TypeScript and are just interested in [the API types](https://foxhole-clientjs.netlify.app/modules/api) you can access them like so:
+If you're using TypeScript and are just interested in [the API types](https://foxhole-client.js.org/modules/api) you can access them like so:
 
 ```ts
 import type { Api } from 'foxhole-client';
