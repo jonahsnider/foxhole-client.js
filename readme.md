@@ -7,7 +7,7 @@
 
 A [Foxhole War API](https://github.com/clapfoot/warapi#readme) client for the web and Node.js.
 
-[It also includes complete typings for the API](#Api%20Types).
+It also includes complete typings for the API (see below for more info).
 
 ```js
 import Foxhole from 'foxhole-client';
