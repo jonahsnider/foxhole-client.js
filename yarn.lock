@@ -3919,7 +3919,7 @@ __metadata:
     c8: 7.10.0
     ky: 0.28.6
     ky-universal: 0.9.1
-    nock: 13.1.4
+    nock: 13.2.0
     nyc: 15.1.0
     prettier: 2.4.1
     semantic-release: 18.0.0
@@ -6256,15 +6256,15 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"nock@npm:13.1.4":
-  version: 13.1.4
-  resolution: "nock@npm:13.1.4"
+"nock@npm:13.2.0":
+  version: 13.2.0
+  resolution: "nock@npm:13.2.0"
   dependencies:
     debug: ^4.1.0
     json-stringify-safe: ^5.0.1
     lodash.set: ^4.3.2
     propagate: ^2.0.0
-  checksum: 2452150f52991229dcba1ee5f32870e7db7ef338fa7a0d4b73f6c034a8df22da076b9569ec04e3c1cdaa919a4657aad702b8eb20ada81b0f43c2feb9c6ae4b48
+  checksum: 97862bfe06ee1514d36bb7fde4be6a7166d44ae2f6e0a9c220386936314c3a8eea0997efc4ddd59fdcde083f721f3f214cfe8c950897c116062273cc707b99fb
   languageName: node
   linkType: hard
 
