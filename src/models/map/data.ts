@@ -18,7 +18,7 @@ export interface TextItem {
  */
 export interface Item {
 	/** The team this item belongs to. */
-	team: Team | null;
+	team: Team | undefined;
 	icon: Api.Map.Icon;
 	/** Normalized map coordinates. */
 	coordinates: Coordinates;

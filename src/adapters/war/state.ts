@@ -8,14 +8,14 @@ export const state: Adapter<Api.War.State, War.State> = {
 
 		if (apiWar.conquestStartTime === null) {
 			if (apiWar.conquestEndTime === null) {
-				conquestTimes = {start: null, end: null};
+				conquestTimes = {start: undefined, end: undefined};
 			} else {
-				throw new TypeError('conquestEndTime must be null when conquestStartTime is null');
+				throw new TypeError('conquestEndTime must be undefined when conquestStartTime is undefined');
 			}
 		} else {
 			conquestTimes = {
 				start: new Date(apiWar.conquestStartTime),
-				end: apiWar.conquestEndTime === null ? null : new Date(apiWar.conquestEndTime),
+				end: apiWar.conquestEndTime === null ? undefined : new Date(apiWar.conquestEndTime),
 			};
 		}
 
@@ -25,7 +25,7 @@ export const state: Adapter<Api.War.State, War.State> = {
 			winner: Adapters.team.deserialize(apiWar.winner),
 			conquestTimes,
 			resistanceTimes: {
-				start: apiWar.resistanceStartTime === null ? null : new Date(apiWar.resistanceStartTime),
+				start: apiWar.resistanceStartTime === null ? undefined : new Date(apiWar.resistanceStartTime),
 			},
 			requiredVictoryTownCount: apiWar.requiredVictoryTowns,
 		};

@@ -10,8 +10,8 @@ test('serializes Colonials', t => {
 	t.is(Adapters.team.serialize!(Team.Colonials), Api.Team.Colonials);
 });
 
-test('serializes null', t => {
-	t.is(Adapters.team.serialize!(null), Api.Team.None);
+test('serializes undefined', t => {
+	t.is(Adapters.team.serialize!(undefined), Api.Team.None);
 });
 
 test('throws on unknown team', t => {

@@ -11,25 +11,25 @@ export interface State {
 	/** The current war number for the shard. */
 	number: number;
 	/** The team that has won the war. */
-	winner: Team | null;
+	winner: Team | undefined;
 	/** Times for when conquest started and ended. */
 	conquestTimes:
 		| {
 				/** When conquest started. */
-				start: null;
+				start: undefined;
 				/** When conquest ended. */
-				end: null;
+				end: undefined;
 		  }
 		| {
 				/** When conquest started. */
 				start: Date;
 				/** When conquest ended. */
-				end: Date | null;
+				end: Date | undefined;
 		  };
 	/** Times for when the resistance phase started and ended. */
 	resistanceTimes: {
 		/** When the resistance phase started. */
-		start: Date | null;
+		start: Date | undefined;
 	};
 	/** Number of victory towns required to win the war. */
 	requiredVictoryTownCount: number;

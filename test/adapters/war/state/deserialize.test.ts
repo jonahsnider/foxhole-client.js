@@ -15,8 +15,8 @@ test('deserializes when conquest is not started', t => {
 		}),
 		{
 			conquestTimes: {
-				start: null,
-				end: null,
+				start: undefined,
+				end: undefined,
 			},
 			id: '0-0-0-0-0',
 			number: 0,
@@ -24,7 +24,7 @@ test('deserializes when conquest is not started', t => {
 			resistanceTimes: {
 				start: new Date(1),
 			},
-			winner: null,
+			winner: undefined,
 		},
 	);
 });
@@ -43,7 +43,7 @@ test('deserializes when conquest is in progress', t => {
 		{
 			conquestTimes: {
 				start: new Date(1),
-				end: null,
+				end: undefined,
 			},
 			id: '0-0-0-0-0',
 			number: 0,
@@ -51,7 +51,7 @@ test('deserializes when conquest is in progress', t => {
 			resistanceTimes: {
 				start: new Date(3),
 			},
-			winner: null,
+			winner: undefined,
 		},
 	);
 });
@@ -78,7 +78,7 @@ test('deserializes when conquest is finished', t => {
 			resistanceTimes: {
 				start: new Date(3),
 			},
-			winner: null,
+			winner: undefined,
 		},
 	);
 });
@@ -103,9 +103,9 @@ test('deserializes when resistance phase is not started', t => {
 			number: 0,
 			requiredVictoryTownCount: 0,
 			resistanceTimes: {
-				start: null,
+				start: undefined,
 			},
-			winner: null,
+			winner: undefined,
 		},
 	);
 });
@@ -123,6 +123,6 @@ test('throws on invalid conquest times', t => {
 				winner: Api.Team.None,
 			});
 		},
-		{instanceOf: TypeError, message: 'conquestEndTime must be null when conquestStartTime is null'},
+		{instanceOf: TypeError, message: 'conquestEndTime must be undefined when conquestStartTime is undefined'},
 	);
 });

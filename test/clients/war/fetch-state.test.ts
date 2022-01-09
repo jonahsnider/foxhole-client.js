@@ -26,7 +26,7 @@ test('fetches state', async t => {
 	t.true(scope.isDone());
 
 	t.deepEqual(state, {
-		winner: null,
+		winner: undefined,
 		number: 1,
 		id: '0-0-0-0-0',
 		resistanceTimes: {start: new Date(2)},

@@ -168,7 +168,7 @@ interface Item_2 {
     };
     // (undocumented)
     icon: Api.Map.Icon;
-    team: Team | null;
+    team: Team | undefined;
 }
 
 declare namespace Map_2 {
@@ -221,19 +221,19 @@ export enum Shard {
 // @public
 interface State {
     conquestTimes: {
-        start: null;
-        end: null;
+        start: undefined;
+        end: undefined;
     } | {
         start: Date;
-        end: Date | null;
+        end: Date | undefined;
     };
     id: `${string}-${string}-${string}-${string}-${string}`;
     number: number;
     requiredVictoryTownCount: number;
     resistanceTimes: {
-        start: Date | null;
+        start: Date | undefined;
     };
-    winner: Team | null;
+    winner: Team | undefined;
 }
 
 // @public

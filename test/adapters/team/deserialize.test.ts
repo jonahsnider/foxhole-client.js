@@ -11,7 +11,7 @@ test('deserializes Colonials', t => {
 });
 
 test('deserializes None', t => {
-	t.is(Adapters.team.deserialize(Api.Team.None), null);
+	t.is(Adapters.team.deserialize(Api.Team.None), undefined);
 });
 
 test('throws on unknown team', t => {
