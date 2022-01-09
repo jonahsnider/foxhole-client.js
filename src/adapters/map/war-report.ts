@@ -3,7 +3,7 @@ import {Team} from '../../index.js';
 import type {Deserializer} from '../../types/adapter.js';
 
 export const warReport: Deserializer<Api.Map.WarReport, Map.WarReport> = {
-	deserialize: apiWar => {
+	deserialize(apiWar) {
 		return {
 			totalEnlistments: apiWar.totalEnlistments,
 			dayOfWar: apiWar.dayOfWar,

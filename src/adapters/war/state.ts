@@ -3,7 +3,7 @@ import type {Deserializer} from '../../types/adapter.js';
 import * as Adapters from '../index.js';
 
 export const state: Deserializer<Api.War.State, War.State> = {
-	deserialize: apiWar => {
+	deserialize(apiWar) {
 		let conquestTimes: War.State['conquestTimes'];
 
 		if (apiWar.conquestStartTime === null) {
