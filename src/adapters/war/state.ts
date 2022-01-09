@@ -1,8 +1,8 @@
 import type {Api, War} from '../../index.js';
-import type {Adapter} from '../../types/adapter.js';
+import type {Deserializer} from '../../types/adapter.js';
 import * as Adapters from '../index.js';
 
-export const state: Adapter<Api.War.State, War.State> = {
+export const state: Deserializer<Api.War.State, War.State> = {
 	deserialize: apiWar => {
 		let conquestTimes: War.State['conquestTimes'];
 

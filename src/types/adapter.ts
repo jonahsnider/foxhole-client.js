@@ -1,8 +1,18 @@
 /**
  * @internal
  */
-export interface Adapter<A, B> {
-	deserialize(serialized: A): B;
+export type Adapter<A, B> = Deserializer<A, B> & Serializer<A, B>;
 
-	serialize?(deserialized: B): A;
+/**
+ * @internal
+ */
+export interface Deserializer<A, B> {
+	deserialize(serialized: A): B;
+}
+
+/**
+ * @internal
+ */
+export interface Serializer<A, B> {
+	serialize(deserialized: B): A;
 }

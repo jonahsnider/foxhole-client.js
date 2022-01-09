@@ -1,9 +1,9 @@
 import type {Map} from '../../index.js';
 import {Api} from '../../index.js';
-import type {Adapter} from '../../types/adapter.js';
+import type {Deserializer} from '../../types/adapter.js';
 import * as Adapters from '../index.js';
 
-const textItemAdapter: Adapter<Api.Map.TextItem, Map.TextItem> = {
+const textItemAdapter: Deserializer<Api.Map.TextItem, Map.TextItem> = {
 	deserialize(apiTextItem) {
 		return {
 			text: apiTextItem.text,
@@ -13,7 +13,7 @@ const textItemAdapter: Adapter<Api.Map.TextItem, Map.TextItem> = {
 	},
 };
 
-const itemAdapter: Adapter<Api.Map.Item, Map.Item> = {
+const itemAdapter: Deserializer<Api.Map.Item, Map.Item> = {
 	deserialize(apiItem) {
 		// eslint-disable-next-line no-bitwise
 		const isScorched = (apiItem.flags | Api.Map.Flags.IsScorched) === apiItem.flags;
@@ -36,7 +36,7 @@ const itemAdapter: Adapter<Api.Map.Item, Map.Item> = {
 	},
 };
 
-export const data: Adapter<Api.Map.Data, Map.Data> = {
+export const data: Deserializer<Api.Map.Data, Map.Data> = {
 	deserialize(apiData) {
 		return {
 			regionId: apiData.regionId,

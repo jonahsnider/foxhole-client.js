@@ -1,8 +1,8 @@
 import type {Map, Api} from '../../index.js';
 import {Team} from '../../index.js';
-import type {Adapter} from '../../types/adapter.js';
+import type {Deserializer} from '../../types/adapter.js';
 
-export const warReport: Adapter<Api.Map.WarReport, Map.WarReport> = {
+export const warReport: Deserializer<Api.Map.WarReport, Map.WarReport> = {
 	deserialize: apiWar => {
 		return {
 			totalEnlistments: apiWar.totalEnlistments,
