@@ -46,7 +46,7 @@
 	"prettier": "@jonahsnider/prettier-config",
 	"dependencies": {
 		"ky": "0.30.0",
-		"ky-universal": "0.10.0"
+		"ky-universal": "0.10.1"
 	},
 	"devDependencies": {
 		"@jonahsnider/prettier-config": "1.1.0",
