@@ -3746,7 +3746,7 @@ __metadata:
     ava: 4.0.1
     c8: 7.11.0
     ky: 0.30.0
-    ky-universal: 0.10.0
+    ky-universal: 0.10.1
     nock: 13.2.4
     nyc: 15.1.0
     prettier: 2.5.1
@@ -5265,19 +5265,19 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"ky-universal@npm:0.10.0":
-  version: 0.10.0
-  resolution: "ky-universal@npm:0.10.0"
+"ky-universal@npm:0.10.1":
+  version: 0.10.1
+  resolution: "ky-universal@npm:0.10.1"
   dependencies:
     abort-controller: ^3.0.0
-    node-fetch: 3.2.0
+    node-fetch: ^3.2.2
   peerDependencies:
     ky: ">=0.26.0"
     web-streams-polyfill: ">=3.0.1"
   peerDependenciesMeta:
     web-streams-polyfill:
       optional: true
-  checksum: d4848d30cd384f5d265f23d65ca7faa0639f57fa9a941d097d7298958161c7ffc49ea012dc3ad1872674a77d0e9845323eb270a1ddf1cdbff136826b7a6cc68f
+  checksum: 61459a8bf62a9c3d2f3efe7893b9a621b21a68208acae6fb7f571d64a57be802d713a1cd147928e734b82539ffab23c12c8cffd6e5b2fa550c22e9d7510035b1
   languageName: node
   linkType: hard
 
@@ -6157,23 +6157,23 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:3.2.0":
-  version: 3.2.0
-  resolution: "node-fetch@npm:3.2.0"
-  dependencies:
-    data-uri-to-buffer: ^4.0.0
-    fetch-blob: ^3.1.4
-    formdata-polyfill: ^4.0.10
-  checksum: 1c809a0f64dd11cc18b49f990440e22c471da47da2a6d6b3388a83beba9d23ba7eaca1b9bf706a792bd283b824cf1a76777910859b9c28ad33a59f2ae4e44f8e
-  languageName: node
-  linkType: hard
-
 "node-fetch@npm:^2.6.1":
   version: 2.6.6
   resolution: "node-fetch@npm:2.6.6"
   dependencies:
     whatwg-url: ^5.0.0
   checksum: ee8290626bdb73629c59722b75dcf4b9b6a67c1ed7eb9102e368479c4a13b56a48c2bb3ad71571e378e98c8b2c64c820e11f9cd39e4b8557dd138ad571ef9a42
+  languageName: node
+  linkType: hard
+
+"node-fetch@npm:^3.2.2":
+  version: 3.2.3
+  resolution: "node-fetch@npm:3.2.3"
+  dependencies:
+    data-uri-to-buffer: ^4.0.0
+    fetch-blob: ^3.1.4
+    formdata-polyfill: ^4.0.10
+  checksum: 6f702b2683d6e1c097e99888bedaac4625d6895f2a8a60573a2bc04916f5577ea61d274f26e308c08cfb724b23d45de7d3514c14b59e0293e9809c66c88ac12c
   languageName: node
   linkType: hard
 
