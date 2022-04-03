@@ -58,7 +58,7 @@
 		"c8": "7.11.0",
 		"nock": "13.2.4",
 		"nyc": "15.1.0",
-		"prettier": "2.6.1",
+		"prettier": "2.6.2",
 		"semantic-release": "18.0.1",
 		"ts-node": "10.7.0",
 		"typedoc": "0.22.13",
