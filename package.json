@@ -54,7 +54,7 @@
 		"@microsoft/api-extractor": "7.29.5",
 		"@tsconfig/node16": "1.0.2",
 		"@types/node": "16.11.43",
-		"ava": "4.2.0",
+		"ava": "4.3.3",
 		"c8": "7.11.3",
 		"nock": "13.2.4",
 		"nyc": "15.1.0",
