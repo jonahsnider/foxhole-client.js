@@ -49,7 +49,7 @@
 		"ky-universal": "0.10.1"
 	},
 	"devDependencies": {
-		"@jonahsnider/prettier-config": "1.1.1",
+		"@jonahsnider/prettier-config": "1.1.2",
 		"@jonahsnider/xo-config": "5.1.0",
 		"@microsoft/api-extractor": "7.28.6",
 		"@tsconfig/node16": "1.0.2",
@@ -58,12 +58,12 @@
 		"c8": "7.11.3",
 		"nock": "13.2.4",
 		"nyc": "15.1.0",
-		"prettier": "2.6.2",
+		"prettier": "2.7.1",
 		"semantic-release": "19.0.2",
 		"ts-node": "10.9.1",
 		"typedoc": "0.22.17",
-		"typescript": "4.7.2",
-		"xo": "0.49.0"
+		"typescript": "4.7.4",
+		"xo": "0.52.1"
 	},
 	"engines": {
 		"node": ">=16.9.0"
