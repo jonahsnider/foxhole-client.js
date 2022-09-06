@@ -22,7 +22,7 @@ export class _BaseClient {
     protected readonly foxholeApi: typeof ky;
 }
 
-// Warning: (ae-incompatible-release-tags) The symbol "Client" is marked as @public, but its signature references "BaseClient" which is marked as @internal
+// Warning: (ae-incompatible-release-tags) The symbol "Client" is marked as @public, but its signature references "_BaseClient" which is marked as @internal
 //
 // @public
 class Client extends _BaseClient {
@@ -193,7 +193,7 @@ declare namespace Map_3 {
     }
 }
 
-// Warning: (ae-incompatible-release-tags) The symbol "MapClient" is marked as @public, but its signature references "BaseClient" which is marked as @internal
+// Warning: (ae-incompatible-release-tags) The symbol "MapClient" is marked as @public, but its signature references "_BaseClient" which is marked as @internal
 //
 // @public
 export class MapClient extends _BaseClient {
@@ -294,7 +294,7 @@ declare namespace War_2 {
     }
 }
 
-// Warning: (ae-incompatible-release-tags) The symbol "WarClient" is marked as @public, but its signature references "BaseClient" which is marked as @internal
+// Warning: (ae-incompatible-release-tags) The symbol "WarClient" is marked as @public, but its signature references "_BaseClient" which is marked as @internal
 //
 // @public
 export class WarClient extends _BaseClient {
