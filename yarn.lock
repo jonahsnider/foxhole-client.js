@@ -1099,10 +1099,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:16.11.43":
-  version: 16.11.43
-  resolution: "@types/node@npm:16.11.43"
-  checksum: 96d09e68347c49ebf84fe1443360edc3f98336f0794256abc8e4f29ef3070546357cae17083d6fd9767b631239367c4f245fe64accff4af057d17bd6694f0b2b
+"@types/node@npm:18.11.5":
+  version: 18.11.5
+  resolution: "@types/node@npm:18.11.5"
+  checksum: ac54e9287dd4549ea3dc8aabc0cf7bfa04c52f02925d7fd68414789617ec770f034c8ae2e111e8bd00d446a46fcac42587b5a316a1303e2f6ea094854248c9ff
   languageName: node
   linkType: hard
 
@@ -3765,7 +3765,7 @@ __metadata:
     "@jonahsnider/xo-config": 5.1.0
     "@microsoft/api-extractor": 7.33.1
     "@tsconfig/node16": 1.0.2
-    "@types/node": 16.11.43
+    "@types/node": 18.11.5
     ava: 5.0.1
     c8: 7.11.3
     ky: 0.30.0
