@@ -34,12 +34,17 @@ export enum Shard {
 export class Client extends BaseClient {
 	static #shardToUrl(shard: Shard | number) {
 		switch (shard) {
-			case Shard.Dev:
+			case Shard.Dev: {
 				return 'https://war-service-dev.foxholeservices.com/api' as const;
-			case Shard.Live1:
+			}
+
+			case Shard.Live1: {
 				return 'https://war-service-live.foxholeservices.com/api' as const;
-			default:
+			}
+
+			default: {
 				return `https://war-service-live-${shard}.foxholeservices.com/api` as const;
+			}
 		}
 	}
 

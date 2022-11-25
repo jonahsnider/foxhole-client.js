@@ -5,7 +5,7 @@ import type {Team} from '../index.js';
  *
  * @public
  */
-export interface State {
+export type State = {
 	/** Unique ID for the war. */
 	warId: `${string}-${string}-${string}-${string}-${string}`;
 	/** The current war number for the shard. */
@@ -23,4 +23,4 @@ export interface State {
 	resistanceStartTime: number | null;
 	/** Number of victory towns required to win the war. */
 	requiredVictoryTowns: number;
-}
+};
