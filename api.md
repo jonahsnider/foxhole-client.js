@@ -36,34 +36,30 @@ export { Client }
 export default Client;
 
 // @public
-export interface Coordinates {
+export type Coordinates = {
     x: number;
     y: number;
-}
+};
 
 // @public (undocumented)
-interface Data {
-    lastUpdated: number;
-    // (undocumented)
-    mapItems: Item[];
-    // (undocumented)
-    mapTextItems: TextItem_2[];
+type Data = {
     regionId: number;
     scorchedVictoryTowns: number;
+    mapItems: Item[];
+    mapTextItems: TextItem_2[];
+    lastUpdated: number;
     version: number;
-}
+};
 
 // @public (undocumented)
-interface Data_2 {
-    // (undocumented)
-    items: Item_2[];
-    lastUpdated: Date;
+type Data_2 = {
     regionId: number;
     scorchedVictoryTownCount: number;
-    // (undocumented)
+    items: Item_2[];
     textItems: TextItem[];
+    lastUpdated: Date;
     version: number;
-}
+};
 
 // @public (undocumented)
 enum Flags {
@@ -144,20 +140,19 @@ enum Icon {
 }
 
 // @public (undocumented)
-interface Item {
-    // (undocumented)
-    flags: number | Map_3.Flags;
-    // (undocumented)
-    iconType: Map_3.Icon;
+type Item = {
     teamId: Team_2;
+    iconType: Map_3.Icon;
     x: number;
     y: number;
-}
+    flags: number | Map_3.Flags;
+};
 
 // @public (undocumented)
-interface Item_2 {
+type Item_2 = {
+    team: Team | undefined;
+    icon: Api.Map.Icon;
     coordinates: Coordinates;
-    // (undocumented)
     flags: {
         isVictoryBase: boolean;
         isHomeBase: boolean;
@@ -166,10 +161,7 @@ interface Item_2 {
         isTownClaimed: boolean;
         isLaunchedRocketSite: boolean;
     };
-    // (undocumented)
-    icon: Api.Map.Icon;
-    team: Team | undefined;
-}
+};
 
 declare namespace Map_2 {
     export {
@@ -219,7 +211,10 @@ export enum Shard {
 }
 
 // @public
-interface State {
+type State = {
+    id: `${string}-${string}-${string}-${string}-${string}`;
+    number: number;
+    winner: Team | undefined;
     conquestTimes: {
         start: undefined;
         end: undefined;
@@ -227,25 +222,22 @@ interface State {
         start: Date;
         end: Date | undefined;
     };
-    id: `${string}-${string}-${string}-${string}-${string}`;
-    number: number;
-    requiredVictoryTownCount: number;
     resistanceTimes: {
         start: Date | undefined;
     };
-    winner: Team | undefined;
-}
+    requiredVictoryTownCount: number;
+};
 
 // @public
-interface State_2 {
-    conquestEndTime: number | null;
-    conquestStartTime: number | null;
-    requiredVictoryTowns: number;
-    resistanceStartTime: number | null;
+type State_2 = {
     warId: `${string}-${string}-${string}-${string}-${string}`;
     warNumber: number;
     winner: Team_2;
-}
+    conquestStartTime: number | null;
+    conquestEndTime: number | null;
+    resistanceStartTime: number | null;
+    requiredVictoryTowns: number;
+};
 
 // @public (undocumented)
 export enum Team {
@@ -266,20 +258,19 @@ enum Team_2 {
 }
 
 // @public (undocumented)
-interface TextItem {
-    coordinates: Coordinates;
-    // (undocumented)
-    mapMarkerType: Api.Map.MarkerType;
+type TextItem = {
     text: string;
-}
+    mapMarkerType: Api.Map.MarkerType;
+    coordinates: Coordinates;
+};
 
 // @public (undocumented)
-interface TextItem_2 {
-    mapMarkerType: Map_3.MarkerType;
+type TextItem_2 = {
     text: string;
     x: number;
     y: number;
-}
+    mapMarkerType: Map_3.MarkerType;
+};
 
 declare namespace War {
     export {
@@ -302,19 +293,19 @@ export class WarClient extends _BaseClient {
 }
 
 // @public
-interface WarReport {
-    colonialCasualties: number;
-    dayOfWar: number;
+type WarReport = {
     totalEnlistments: number;
+    colonialCasualties: number;
     wardenCasualties: number;
-}
+    dayOfWar: number;
+};
 
 // @public
-interface WarReport_2 {
+type WarReport_2 = {
+    totalEnlistments: number;
     casualties: Record<Team, number>;
     dayOfWar: number;
-    totalEnlistments: number;
-}
+};
 
 // @public
 export const WORLD_EXTENT: Readonly<Record<'minimum' | 'maximum', Coordinates>>;

@@ -5,18 +5,18 @@ import type {Coordinates} from '../../types/common.js';
 /**
  * @public
  */
-export interface TextItem {
+export type TextItem = {
 	/** Text string as it would appear on the map in-game. */
 	text: string;
 	mapMarkerType: Api.Map.MarkerType;
 	/** Normalized map coordinates. */
 	coordinates: Coordinates;
-}
+};
 
 /**
  * @public
  */
-export interface Item {
+export type Item = {
 	/** The team this item belongs to. */
 	team: Team | undefined;
 	icon: Api.Map.Icon;
@@ -39,12 +39,12 @@ export interface Item {
 		/** If this item is a launched rocket site. */
 		isLaunchedRocketSite: boolean;
 	};
-}
+};
 
 /**
  * @public
  */
-export interface Data {
+export type Data = {
 	/** Internal region ID for this map. */
 	regionId: number;
 	/** The number of scorched victory towns. */
@@ -58,4 +58,4 @@ export interface Data {
 	 * Used for caching.
 	 */
 	version: number;
-}
+};

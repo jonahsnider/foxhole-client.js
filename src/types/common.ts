@@ -3,9 +3,9 @@
  *
  * @public
  */
-export interface Coordinates {
+export type Coordinates = {
 	/** The X coordinate. */
 	x: number;
 	/** The Y coordinate. */
 	y: number;
-}
+};

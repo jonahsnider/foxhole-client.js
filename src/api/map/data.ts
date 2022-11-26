@@ -3,7 +3,7 @@ import type {Team, Map} from '../index.js';
 /**
  * @public
  */
-export interface TextItem {
+export type TextItem = {
 	/** Text string as it would appear on the map in-game. */
 	text: string;
 	/** Normalized map coordinate. */
@@ -15,12 +15,12 @@ export interface TextItem {
 	 * Minor markers simply indicate areas of interest on the map, but don't have major gameplay impact.
 	 */
 	mapMarkerType: Map.MarkerType;
-}
+};
 
 /**
  * @public
  */
-export interface Item {
+export type Item = {
 	/** The team this item belongs to. */
 	teamId: Team;
 	iconType: Map.Icon;
@@ -29,12 +29,12 @@ export interface Item {
 	/** Normalized map coordinate. */
 	y: number;
 	flags: number | Map.Flags;
-}
+};
 
 /**
  * @public
  */
-export interface Data {
+export type Data = {
 	/** Internal region ID for this map. */
 	regionId: number;
 	/** The number of scorched victory towns. */
@@ -48,4 +48,4 @@ export interface Data {
 	 * Used for caching.
 	 */
 	version: number;
-}
+};
