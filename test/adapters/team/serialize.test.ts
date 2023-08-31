@@ -17,6 +17,7 @@ test('serializes undefined', t => {
 test('throws on unknown team', t => {
 	t.throws(
 		() => {
+			// eslint-disable-next-line @typescript-eslint/no-unsafe-argument
 			Adapters.team.serialize('unknown' as any);
 		},
 		{instanceOf: RangeError, message: 'Unknown team: unknown'},
