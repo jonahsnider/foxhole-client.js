@@ -100,7 +100,7 @@ export class Client extends BaseClient {
 	 */
 	constructor(url?: string);
 	constructor(urlOrShard: string | Shard | number = Shard.Live1) {
-		const url = typeof urlOrShard === 'number' || urlOrShard === Shard.Dev ? Client.#shardToUrl(urlOrShard) : urlOrShard;
+		const url = urlOrShard === Shard.Dev || typeof urlOrShard === 'number' ? Client.#shardToUrl(urlOrShard) : urlOrShard;
 
 		const http = ky.create({
 			prefixUrl: url,
