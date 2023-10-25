@@ -4090,7 +4090,7 @@ __metadata:
     ava: 5.3.1
     c8: 8.0.1
     ky: 0.33.3
-    ky-universal: 0.11.0
+    ky-universal: 0.12.0
     nock: 13.3.6
     nyc: 15.1.0
     prettier: 3.0.3
@@ -5831,19 +5831,18 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"ky-universal@npm:0.11.0":
-  version: 0.11.0
-  resolution: "ky-universal@npm:0.11.0"
+"ky-universal@npm:0.12.0":
+  version: 0.12.0
+  resolution: "ky-universal@npm:0.12.0"
   dependencies:
-    abort-controller: ^3.0.0
-    node-fetch: ^3.2.10
+    node-fetch: ^3.3.2
   peerDependencies:
-    ky: ">=0.31.4"
+    ky: ">=0.33.0"
     web-streams-polyfill: ">=3.2.1"
   peerDependenciesMeta:
     web-streams-polyfill:
       optional: true
-  checksum: 42e4c91551a0d17465d6a117de2d1fa4efdf38c4e29dbd70af0c5b7ac0ee13994bceca9af2a0ac21a943d1cd22557ea664abe79f25e096d30a6baca0a0265a12
+  checksum: b1d7ba2bdfd0da1481c67f423edcf7cfa093927d62052a423382099d6c14acebfc96e13947f3e1d2fd8505bcdaa4c680a2964b53cfc5ac5aa43fdf3cf2267d1f
   languageName: node
   linkType: hard
 
@@ -6743,14 +6742,14 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:^3.2.10":
-  version: 3.3.1
-  resolution: "node-fetch@npm:3.3.1"
+"node-fetch@npm:^3.3.2":
+  version: 3.3.2
+  resolution: "node-fetch@npm:3.3.2"
   dependencies:
     data-uri-to-buffer: ^4.0.0
     fetch-blob: ^3.1.4
     formdata-polyfill: ^4.0.10
-  checksum: 62145fd3ba4770a76110bc31fdc0054ab2f5442b5ce96e9c4b39fc9e94a3d305560eec76e1165d9259eab866e02a8eecf9301062bb5dfc9f08a4d08b69d223dd
+  checksum: 06a04095a2ddf05b0830a0d5302699704d59bda3102894ea64c7b9d4c865ecdff2d90fd042df7f5bc40337266961cb6183dcc808ea4f3000d024f422b462da92
   languageName: node
   linkType: hard
 
