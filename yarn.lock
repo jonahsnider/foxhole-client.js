@@ -1277,12 +1277,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:18.19.0":
-  version: 18.19.0
-  resolution: "@types/node@npm:18.19.0"
+"@types/node@npm:18.19.1":
+  version: 18.19.1
+  resolution: "@types/node@npm:18.19.1"
   dependencies:
     undici-types: ~5.26.4
-  checksum: cf91c4dd7c219e101dee820c69dc5ad497acbcc0a44a7d5efb00fdea4bede247446ce5f4bbd3d115ca539dd21321d840ad42eaacce3321cde1f732b29a621fb8
+  checksum: f687338a6f1c463b03232337652804f62f5ae197ae9517a76cf6543ec5a3e358e41f26da0e4fc1afe4871c4a96eec3e3c440fb4ddb616cdc336b42ca203adb29
   languageName: node
   linkType: hard
 
@@ -4111,7 +4111,7 @@ __metadata:
     "@jonahsnider/xo-config": 5.3.0
     "@microsoft/api-extractor": 7.38.3
     "@tsconfig/node16": 16.1.1
-    "@types/node": 18.19.0
+    "@types/node": 18.19.1
     ava: 5.3.1
     c8: 8.0.1
     ky: 0.33.3
