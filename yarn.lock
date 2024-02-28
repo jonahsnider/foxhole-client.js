@@ -1972,9 +1972,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ava@npm:6.1.1":
-  version: 6.1.1
-  resolution: "ava@npm:6.1.1"
+"ava@npm:6.1.2":
+  version: 6.1.2
+  resolution: "ava@npm:6.1.2"
   dependencies:
     "@vercel/nft": ^0.26.2
     acorn: ^8.11.3
@@ -2023,7 +2023,7 @@ __metadata:
       optional: true
   bin:
     ava: entrypoints/cli.mjs
-  checksum: e3e5c7384bb6785ac785ffac62687b247c6b43f95e341559e2fc98b32553dba637bc50455d974f8ff0170bc1324895883becb12243d5c57f763f247beb80c466
+  checksum: 76764b884e5c1a553fbb846b226f73c5be363241a0f881df396c1af3f0444c49317e0003ab098f691bdfe7e3251f393a844ab3cedfa4ab860c923c6eb6cd14ca
   languageName: node
   linkType: hard
 
@@ -4146,7 +4146,7 @@ __metadata:
     "@microsoft/api-extractor": 7.41.1
     "@tsconfig/node16": 16.1.1
     "@types/node": 18.19.20
-    ava: 6.1.1
+    ava: 6.1.2
     c8: 8.0.1
     ky: 0.33.3
     ky-universal: 0.12.0
