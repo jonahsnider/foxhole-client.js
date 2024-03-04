@@ -61,7 +61,7 @@
 		"prettier": "3.2.5",
 		"semantic-release": "22.0.12",
 		"ts-node": "10.9.2",
-		"typedoc": "0.25.9",
+		"typedoc": "0.25.10",
 		"typescript": "5.3.3",
 		"xo": "0.56.0"
 	},
