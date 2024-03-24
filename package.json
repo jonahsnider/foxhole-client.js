@@ -59,7 +59,7 @@
 		"nock": "13.5.4",
 		"nyc": "15.1.0",
 		"prettier": "3.2.5",
-		"semantic-release": "22.0.12",
+		"semantic-release": "23.0.6",
 		"ts-node": "10.9.2",
 		"typedoc": "0.25.12",
 		"typescript": "5.3.3",
