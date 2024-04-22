@@ -4149,7 +4149,7 @@ __metadata:
     "@types/node": 18.19.31
     ava: 6.1.2
     c8: 8.0.1
-    ky: 0.33.3
+    ky: 1.2.4
     ky-universal: 0.12.0
     nock: 13.5.4
     nyc: 15.1.0
@@ -5890,10 +5890,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ky@npm:0.33.3":
-  version: 0.33.3
-  resolution: "ky@npm:0.33.3"
-  checksum: d1869e1f33c0165355f621b6726fcc1a9de20a31f4a826ca0cfd5753d83b9cba8723402d554a00194e0ee3959e0dda0638f4b99d54a3a7de928b55ff870b0bcc
+"ky@npm:1.2.4":
+  version: 1.2.4
+  resolution: "ky@npm:1.2.4"
+  checksum: 2e0a10edb4018a958f40ee2468ffb713b4357f1e48456ba621e615d58242ef1dfe0b9a6fbdbd6ae2a57548853f4ff71c55cd32c0e9aefd9d2c5bf11cfd913242
   languageName: node
   linkType: hard
 
